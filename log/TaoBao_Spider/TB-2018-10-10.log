@@ -1,0 +1,306 @@
+2018-10-10 13:37:36 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats'] -from_settings - 53
+2018-10-10 13:37:36 - INFO - Reading start URLs from redis key 'taobao' (batch size: 32, encoding: utf-8 -setup_redis - 68
+2018-10-10 13:37:37 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'TaobaoSpider.middlewares.TaobaospiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'] -from_settings - 53
+2018-10-10 13:37:37 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'] -from_settings - 53
+2018-10-10 13:37:37 - INFO - Enabled item pipelines:
+['TaobaoSpider.pipelines.TaobaospiderPipeline'] -from_settings - 53
+2018-10-10 13:37:37 - INFO - Spider opened -open_spider - 256
+2018-10-10 13:37:39 - CRITICAL - Unhandled error in Deferred: -publishToNewObserver - 154
+2018-10-10 13:37:39 - CRITICAL -  -publishToNewObserver - 154
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 484, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 541, in _connect
+    raise err
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\client.py", line 667, in execute_command
+    connection.send_command(*args)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 610, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 585, in send_packed_command
+    self.connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 484, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 541, in _connect
+    raise err
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\crawler.py", line 82, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+2018-10-10 13:37:56 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats'] -from_settings - 53
+2018-10-10 13:37:56 - INFO - Reading start URLs from redis key 'taobao' (batch size: 32, encoding: utf-8 -setup_redis - 68
+2018-10-10 13:37:56 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'TaobaoSpider.middlewares.TaobaospiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'] -from_settings - 53
+2018-10-10 13:37:56 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'] -from_settings - 53
+2018-10-10 13:37:56 - INFO - Enabled item pipelines:
+['TaobaoSpider.pipelines.TaobaospiderPipeline'] -from_settings - 53
+2018-10-10 13:37:56 - INFO - Spider opened -open_spider - 256
+2018-10-10 13:37:58 - CRITICAL - Unhandled error in Deferred: -publishToNewObserver - 154
+2018-10-10 13:37:58 - CRITICAL -  -publishToNewObserver - 154
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 484, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 541, in _connect
+    raise err
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\client.py", line 667, in execute_command
+    connection.send_command(*args)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 610, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 585, in send_packed_command
+    self.connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 484, in connect
+    sock = self._connect()
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 541, in _connect
+    raise err
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\redis\connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\twisted\internet\defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\crawler.py", line 82, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+2018-10-10 13:46:53 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats'] -from_settings - 53
+2018-10-10 13:46:53 - INFO - Reading start URLs from redis key 'taobao' (batch size: 32, encoding: utf-8 -setup_redis - 68
+2018-10-10 13:46:53 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'TaobaoSpider.middlewares.TaobaospiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'] -from_settings - 53
+2018-10-10 13:46:53 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'] -from_settings - 53
+2018-10-10 13:46:53 - INFO - Enabled item pipelines:
+['TaobaoSpider.pipelines.TaobaospiderPipeline'] -from_settings - 53
+2018-10-10 13:46:53 - INFO - Spider opened -open_spider - 256
+2018-10-10 13:46:53 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min) -log - 48
+2018-10-10 13:46:53 - INFO - Spider opened: Taobao -spider_opened - 104
+2018-10-10 13:46:53 - INFO - redis库推送token数据成功，用户为：111 -make_request_from_data - 125
+2018-10-10 13:46:53 - INFO - 没有结果 -select_crawl_user - 152
+2018-10-10 13:46:54 - ERROR - 用户:111账户信息不全，无法进入认证 -make_request_from_data - 152
+2018-10-10 13:46:54 - WARNING - C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py:170: Warning: (1265, "Data truncated for column 'uid' at row 1")
+  result = self._query(query)
+ -_showwarnmsg - 99
+2018-10-10 13:47:18 - INFO - redis库推送token数据成功，用户为：111 -make_request_from_data - 125
+2018-10-10 13:47:18 - INFO - 没有结果 -select_crawl_user - 152
+2018-10-10 13:47:18 - ERROR - 用户:111账户信息不全，无法进入认证 -make_request_from_data - 152
+2018-10-10 13:47:36 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats'] -from_settings - 53
+2018-10-10 13:47:36 - INFO - Reading start URLs from redis key 'taobao' (batch size: 32, encoding: utf-8 -setup_redis - 68
+2018-10-10 13:47:36 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'TaobaoSpider.middlewares.TaobaospiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'] -from_settings - 53
+2018-10-10 13:47:36 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'] -from_settings - 53
+2018-10-10 13:47:36 - INFO - Enabled item pipelines:
+['TaobaoSpider.pipelines.TaobaospiderPipeline'] -from_settings - 53
+2018-10-10 13:47:36 - INFO - Spider opened -open_spider - 256
+2018-10-10 13:47:36 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min) -log - 48
+2018-10-10 13:47:36 - INFO - Spider opened: Taobao -spider_opened - 104
+2018-10-10 13:47:53 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min) -log - 48
+2018-10-10 13:48:08 - INFO - redis库推送token数据成功，用户为：1111 -make_request_from_data - 125
+2018-10-10 13:48:08 - INFO - 成功接收到任务，用户为:1111 -make_request_from_data - 129
+2018-10-10 13:48:08 - WARNING - C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+ -_showwarnmsg - 99
+2018-10-10 13:48:36 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min) -log - 48
+2018-10-10 15:27:28 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats'] -from_settings - 53
+2018-10-10 15:27:28 - INFO - Reading start URLs from redis key 'taobao' (batch size: 32, encoding: utf-8 -setup_redis - 68
+2018-10-10 15:27:28 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'TaobaoSpider.middlewares.TaobaospiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'] -from_settings - 53
+2018-10-10 15:27:28 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'] -from_settings - 53
+2018-10-10 15:27:28 - INFO - Enabled item pipelines:
+['TaobaoSpider.pipelines.TaobaospiderPipeline'] -from_settings - 53
+2018-10-10 15:27:28 - INFO - Spider opened -open_spider - 256
+2018-10-10 15:27:28 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min) -log - 48
+2018-10-10 15:27:28 - INFO - Spider opened: Taobao -spider_opened - 104
+2018-10-10 15:27:38 - INFO - redis库推送token数据成功，用户为：123 -make_request_from_data - 125
+2018-10-10 15:27:39 - INFO - 成功接收到任务，用户为:123 -make_request_from_data - 129
+2018-10-10 15:27:39 - WARNING - C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+ -_showwarnmsg - 99
+2018-10-10 15:27:47 - INFO - 用户123cookie信息不全,原因：'um',一般不影响 -get_cookie - 1362
+2018-10-10 15:27:47 - INFO - _uab_collina重要登录数据已取到用户：123 -get_cookie - 1365
+2018-10-10 15:27:51 - ERROR - Error downloading <GET https://qrlogin.taobao.com/qrcodelogin/generateQRCode4Login.do?adUrl=&amp&adImage=&amp&adText=&amp&viewFd4PC=&amp&viewFd4Mobile=&amp&from=tb&amp&appkey=00000000&amp&umid_token=HV01PAAZ0b8347a5ab78ddab5bbda9b90618655c&amp&_ksTS=1539156465848_29&amp&callback=jsonp30> -_log_download_errors - 208
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-10-10 15:28:00 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats'] -from_settings - 53
+2018-10-10 15:28:00 - INFO - Reading start URLs from redis key 'taobao' (batch size: 32, encoding: utf-8 -setup_redis - 68
+2018-10-10 15:28:00 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'TaobaoSpider.middlewares.TaobaospiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'] -from_settings - 53
+2018-10-10 15:28:00 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'] -from_settings - 53
+2018-10-10 15:28:00 - INFO - Enabled item pipelines:
+['TaobaoSpider.pipelines.TaobaospiderPipeline'] -from_settings - 53
+2018-10-10 15:28:00 - INFO - Spider opened -open_spider - 256
+2018-10-10 15:28:00 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min) -log - 48
+2018-10-10 15:28:00 - INFO - Spider opened: Taobao -spider_opened - 104
+2018-10-10 15:28:55 - INFO - redis库推送token数据成功，用户为：11112 -make_request_from_data - 125
+2018-10-10 15:28:56 - INFO - 成功接收到任务，用户为:11112 -make_request_from_data - 129
+2018-10-10 15:28:56 - WARNING - C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+ -_showwarnmsg - 99
+2018-10-10 15:29:04 - INFO - 用户11112cookie信息不全,原因：'um',一般不影响 -get_cookie - 1362
+2018-10-10 15:29:04 - INFO - _uab_collina重要登录数据已取到用户：11112 -get_cookie - 1365
+2018-10-10 15:29:04 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min) -log - 48
+2018-10-10 15:29:08 - ERROR - Error downloading <GET https://qrlogin.taobao.com/qrcodelogin/generateQRCode4Login.do?adUrl=&amp&adImage=&amp&adText=&amp&viewFd4PC=&amp&viewFd4Mobile=&amp&from=tb&amp&appkey=00000000&amp&umid_token=HV01PAAZ0b016681ab78ddab5bbdaa06061a9494&amp&_ksTS=1539156542808_29&amp&callback=jsonp30> -_log_download_errors - 208
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.
+2018-10-10 15:29:15 - INFO - redis库推送token数据成功，用户为：11112 -make_request_from_data - 125
+2018-10-10 15:29:15 - INFO - 成功接收到任务，用户为:11112 -make_request_from_data - 129
+2018-10-10 15:29:24 - INFO - 用户11112cookie信息不全,原因：'um',一般不影响 -get_cookie - 1362
+2018-10-10 15:29:24 - INFO - _uab_collina重要登录数据已取到用户：11112 -get_cookie - 1365
+2018-10-10 15:29:27 - ERROR - Error downloading <GET https://qrlogin.taobao.com/qrcodelogin/generateQRCode4Login.do?adUrl=&amp&adImage=&amp&adText=&amp&viewFd4PC=&amp&viewFd4Mobile=&amp&from=tb&amp&appkey=00000000&amp&umid_token=HV01PAAZ0b080a8bab78ddab5bbdaa1a07a1f70c&amp&_ksTS=1539156562385_29&amp&callback=jsonp30> -_log_download_errors - 208
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\scrapy\core\downloader\middleware.py", line 43, in process_request
+    defer.returnValue((yield download_func(request=request,spider=spider)))
+twisted.internet.error.ConnectionRefusedError: Connection was refused by other side: 10061: 由于目标计算机积极拒绝，无法连接。.

@@ -1,0 +1,101 @@
+2018-10-16 10:45:02 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats'] -from_settings - 53
+2018-10-16 10:45:02 - INFO - Reading start URLs from redis key 'taobao' (batch size: 32, encoding: utf-8 -setup_redis - 68
+2018-10-16 10:45:02 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'TaobaoSpider.middlewares.TaobaospiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'] -from_settings - 53
+2018-10-16 10:45:02 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'] -from_settings - 53
+2018-10-16 10:45:02 - INFO - Enabled item pipelines:
+['TaobaoSpider.pipelines.TaobaospiderPipeline'] -from_settings - 53
+2018-10-16 10:45:02 - INFO - Spider opened -open_spider - 256
+2018-10-16 10:45:02 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min) -log - 48
+2018-10-16 10:45:02 - INFO - Spider opened: Taobao -spider_opened - 104
+2018-10-16 15:14:06 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats'] -from_settings - 53
+2018-10-16 15:14:06 - INFO - Reading start URLs from redis key 'taobao' (batch size: 32, encoding: utf-8 -setup_redis - 68
+2018-10-16 15:14:06 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'TaobaoSpider.middlewares.TaobaospiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'] -from_settings - 53
+2018-10-16 15:14:06 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'] -from_settings - 53
+2018-10-16 15:14:06 - INFO - Enabled item pipelines:
+['TaobaoSpider.pipelines.TaobaospiderPipeline'] -from_settings - 53
+2018-10-16 15:14:06 - INFO - Spider opened -open_spider - 256
+2018-10-16 15:14:06 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min) -log - 48
+2018-10-16 15:14:06 - INFO - Spider opened: Taobao -spider_opened - 104
+2018-10-16 15:14:16 - INFO - redis库推送token数据成功，用户为：jianjian -make_request_from_data - 121
+2018-10-16 15:14:17 - INFO - 成功接收到任务，用户为:jianjian -make_request_from_data - 125
+2018-10-16 15:14:18 - INFO - 入库二维码成功并设置爬虫任务设置为-3,等待用户jianjian扫描二维码 -get_qr - 173
+2018-10-16 15:14:20 - INFO - 等待用户jianjian扫码：10000 -success - 221
+2018-10-16 15:14:22 - INFO - 等待用户jianjian扫码：10000 -success - 221
+2018-10-16 15:14:24 - INFO - 等待用户jianjian扫码：10000 -success - 221
+2018-10-16 15:14:26 - INFO - 等待用户jianjian扫码：10000 -success - 221
+2018-10-16 15:14:29 - INFO - 等待用户jianjian扫码：10000 -success - 221
+2018-10-16 15:14:31 - INFO - 等待用户jianjian扫码：10000 -success - 221
+2018-10-16 15:14:33 - INFO - 等待用户jianjian扫码：10000 -success - 221
+2018-10-16 15:14:35 - INFO - 等待用户jianjian扫码：10000 -success - 221
+2018-10-16 15:14:37 - INFO - 等待用户jianjian扫码：10000 -success - 221
+2018-10-16 15:14:39 - INFO - 等待用户jianjian扫码：10000 -success - 221
+2018-10-16 15:14:41 - INFO - 等待用户jianjian扫码：10000 -success - 221
+2018-10-16 15:14:44 - INFO - 用户jianjian扫码成功 等待点击确认操作:10001 -success - 242
+2018-10-16 15:14:44 - INFO - 用户jianjian扫码 确认 成功：10006 -success - 263
+2018-10-16 15:14:44 - INFO - 用户jianjiansuccess_url登录淘宝url获取成功：https://login.taobao.com/member/loginByIm.do?uid=cntaobao%E6%97%A0%E6%B3%95%E6%91%86%E8%84%B1%E4%BD%A02012&token=4b226280dcee6f064498190d15817cc9&time=1539674026253&asker=qrcodelogin&ask_version=1.0.0&defaulturl=https%3A%2F%2Fwww.taobao.com%2F&webpas=7029ec1abb08948566e080db149c34ee1651847391&umid_token=C1539674057361950360207361539674057361950 -success - 269
+2018-10-16 15:14:46 - INFO - 用户jianjian登陆成功，开始解析 -yes - 345
+2018-10-16 15:14:51 - INFO - 用户jianjian已存在订单完成1页 -orders - 744
+2018-10-16 15:14:55 - INFO - 用户jianjian已存在订单完成2页 -orders - 744
+2018-10-16 15:14:57 - INFO - 新版本解析用户jianjian天猫可能出错：订单状态：交易关闭订单id：203905490362963231 -tmall_detail - 1304
+2018-10-16 15:14:59 - INFO - 用户jianjian已存在订单完成3页 -orders - 744
+2018-10-16 15:15:00 - WARNING - C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py:170: Warning: (1265, "Data truncated for column 'consigneeMobile' at row 1")
+  result = self._query(query)
+ -_showwarnmsg - 99
+2018-10-16 15:15:05 - INFO - 用户jianjian已存在订单完成4页 -orders - 744
+2018-10-16 15:15:07 - INFO - Crawled 79 pages (at 79 pages/min), scraped 128 items (at 128 items/min) -log - 48
+2018-10-16 15:15:08 - INFO - 用户jianjian已存在订单完成5页 -orders - 744
+2018-10-16 15:15:13 - INFO - 用户jianjian已存在订单完成6页 -orders - 744
+2018-10-16 15:15:17 - INFO - 用户jianjian已存在订单完成7页 -orders - 744
+2018-10-16 15:15:20 - INFO - 用户jianjian已存在订单完成8页 -orders - 744
+2018-10-16 15:15:24 - INFO - 用户jianjian已存在订单完成9页 -orders - 744
+2018-10-16 15:15:27 - INFO - 用户jianjian已存在订单完成10页 -orders - 744
+2018-10-16 15:15:31 - INFO - 用户jianjian已存在订单完成11页 -orders - 744
+2018-10-16 15:15:37 - INFO - 用户jianjian已存在订单完成12页 -orders - 744
+2018-10-16 15:15:41 - INFO - 用户jianjian已存在订单完成13页 -orders - 744
+2018-10-16 15:15:46 - INFO - 用户jianjian已存在订单完成14页 -orders - 744
+2018-10-16 15:15:50 - INFO - 用户jianjian已存在订单完成15页 -orders - 744
+2018-10-16 15:15:53 - INFO - 用户jianjian回收站订单完成1页 -orders - 746
+2018-10-16 15:15:57 - INFO - 用户jianjian回收站订单完成2页 -orders - 746
+2018-10-16 15:16:01 - INFO - 用户jianjian回收站订单完成3页 -orders - 746
+2018-10-16 15:16:02 - INFO - 用户jianjian所有订单页面完成 -orders - 943
+2018-10-16 15:16:06 - INFO - Crawled 288 pages (at 209 pages/min), scraped 603 items (at 475 items/min) -log - 48

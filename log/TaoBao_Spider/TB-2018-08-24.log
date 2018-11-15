@@ -1,0 +1,395 @@
+2018-08-24 19:17:51 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats'] -from_settings - 53
+2018-08-24 19:17:51 - INFO - Reading start URLs from redis key 'taobao' (batch size: 32, encoding: utf-8 -setup_redis - 68
+2018-08-24 19:17:51 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'TaobaoSpider.middlewares.TaobaospiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'] -from_settings - 53
+2018-08-24 19:17:51 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'] -from_settings - 53
+2018-08-24 19:17:51 - INFO - Enabled item pipelines:
+['TaobaoSpider.pipelines.TaobaospiderPipeline'] -from_settings - 53
+2018-08-24 19:17:51 - INFO - Spider opened -open_spider - 256
+2018-08-24 19:17:51 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min) -log - 48
+2018-08-24 19:17:51 - INFO - Spider opened: Taobao -spider_opened - 104
+2018-08-24 19:18:01 - INFO - redis库推送token数据成功，用户为：123 -make_request_from_data - 125
+2018-08-24 19:18:02 - INFO - 成功接收到任务，用户为:123 -make_request_from_data - 129
+2018-08-24 19:18:02 - WARNING - C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+ -_showwarnmsg - 99
+2018-08-24 19:18:12 - INFO - 用户123cookie信息不全,原因：'um',一般不影响 -get_cookie - 1353
+2018-08-24 19:18:12 - INFO - _uab_collina重要登录数据已取到用户：123 -get_cookie - 1356
+2018-08-24 19:18:13 - INFO - 入库二维码成功并设置爬虫任务设置为-3,等待用户123扫描二维码 -get_qr - 177
+2018-08-24 19:18:15 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:18:18 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:18:20 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:18:22 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:18:24 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:18:26 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:18:28 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:18:30 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:18:33 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:18:35 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:18:37 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:18:39 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:18:41 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:18:43 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:18:46 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:18:46 - INFO - 用户123扫码 确认 成功：10006 -success - 268
+2018-08-24 19:18:46 - INFO - 用户123success_url登录淘宝url获取成功：https://login.taobao.com/member/loginByIm.do?uid=cntaobao%E6%97%A0%E6%B3%95%E6%91%86%E8%84%B1%E4%BD%A02012&token=5ea9b8ae2ddf574700822112fc62b12b&time=1535109483108&asker=qrcodelogin&ask_version=1.0.0&defaulturl=https%3A%2F%2Fwww.taobao.com%2F&webpas=7750795b7dac04429f7fb1700787c3581651847391&umid_token=C1535109487317512707732621535109471263403 -success - 274
+2018-08-24 19:18:47 - INFO - 用户123登陆成功，开始解析 -yes - 354
+2018-08-24 19:18:51 - INFO - Crawled 28 pages (at 28 pages/min), scraped 4 items (at 4 items/min) -log - 48
+2018-08-24 19:18:52 - INFO - 用户123已存在订单完成1页 -orders - 741
+2018-08-24 19:18:56 - INFO - 用户123已存在订单完成2页 -orders - 741
+2018-08-24 19:18:57 - INFO - 新版本解析用户123天猫可能出错：订单状态：交易关闭订单id：203905490362963231 -tmall_detail - 1292
+2018-08-24 19:19:00 - WARNING - C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py:170: Warning: (1265, "Data truncated for column 'consigneeMobile' at row 1")
+  result = self._query(query)
+ -_showwarnmsg - 99
+2018-08-24 19:19:01 - INFO - 用户123已存在订单完成3页 -orders - 741
+2018-08-24 19:19:06 - INFO - 用户123已存在订单完成4页 -orders - 741
+2018-08-24 19:19:10 - INFO - 用户123已存在订单完成5页 -orders - 741
+2018-08-24 19:19:14 - INFO - 用户123已存在订单完成6页 -orders - 741
+2018-08-24 19:19:19 - INFO - 用户123已存在订单完成7页 -orders - 741
+2018-08-24 19:19:23 - INFO - 用户123已存在订单完成8页 -orders - 741
+2018-08-24 19:19:27 - INFO - 用户123已存在订单完成9页 -orders - 741
+2018-08-24 19:19:31 - INFO - 用户123已存在订单完成10页 -orders - 741
+2018-08-24 19:19:37 - INFO - 用户123已存在订单完成11页 -orders - 741
+2018-08-24 19:19:42 - INFO - 用户123已存在订单完成12页 -orders - 741
+2018-08-24 19:19:46 - INFO - 用户123已存在订单完成13页 -orders - 741
+2018-08-24 19:19:51 - INFO - 用户123已存在订单完成14页 -orders - 741
+2018-08-24 19:19:51 - INFO - Crawled 237 pages (at 209 pages/min), scraped 473 items (at 469 items/min) -log - 48
+2018-08-24 19:19:55 - INFO - 用户123回收站订单完成1页 -orders - 743
+2018-08-24 19:20:00 - INFO - 用户123回收站订单完成2页 -orders - 743
+2018-08-24 19:20:04 - INFO - 用户123回收站订单完成3页 -orders - 743
+2018-08-24 19:20:05 - INFO - 用户123所有订单页面完成 -orders - 934
+2018-08-24 19:20:51 - INFO - Crawled 285 pages (at 48 pages/min), scraped 587 items (at 114 items/min) -log - 48
+2018-08-24 19:21:31 - INFO - redis库推送token数据成功，用户为：123 -make_request_from_data - 125
+2018-08-24 19:21:31 - INFO - 成功接收到任务，用户为:123 -make_request_from_data - 129
+2018-08-24 19:21:42 - INFO - 用户123cookie信息不全,原因：'um',一般不影响 -get_cookie - 1353
+2018-08-24 19:21:42 - INFO - _uab_collina重要登录数据已取到用户：123 -get_cookie - 1356
+2018-08-24 19:21:42 - INFO - 入库二维码成功并设置爬虫任务设置为-3,等待用户123扫描二维码 -get_qr - 177
+2018-08-24 19:21:45 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:21:47 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:21:49 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:21:51 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:21:51 - INFO - Crawled 291 pages (at 6 pages/min), scraped 587 items (at 0 items/min) -log - 48
+2018-08-24 19:21:53 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:21:55 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:21:57 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:00 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:02 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:04 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:06 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:08 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:10 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:13 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:15 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:17 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:19 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:21 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:23 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:25 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:28 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:30 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:32 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:34 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:36 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:38 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:41 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:43 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:45 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:47 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:49 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:51 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:51 - INFO - Crawled 318 pages (at 27 pages/min), scraped 587 items (at 0 items/min) -log - 48
+2018-08-24 19:22:53 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:56 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:22:58 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:00 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:02 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:04 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:06 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:09 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:11 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:13 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:15 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:17 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:19 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:21 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:24 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:26 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:28 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:30 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:32 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:34 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:36 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:39 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:41 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:43 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:45 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:47 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:49 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:52 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:52 - INFO - Crawled 346 pages (at 28 pages/min), scraped 587 items (at 0 items/min) -log - 48
+2018-08-24 19:23:54 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:56 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:23:58 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:00 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:02 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:05 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:07 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:09 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:11 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:13 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:15 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:17 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:20 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:22 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:24 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:26 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:28 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:30 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:33 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:35 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:37 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:39 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:41 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:43 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:24:44 - INFO - 用户123扫描的二维码失效 程序结束:10004 -success - 298
+2018-08-24 19:24:51 - INFO - Crawled 371 pages (at 25 pages/min), scraped 587 items (at 0 items/min) -log - 48
+2018-08-24 19:25:51 - INFO - Crawled 371 pages (at 0 pages/min), scraped 587 items (at 0 items/min) -log - 48
+2018-08-24 19:26:51 - INFO - Crawled 371 pages (at 0 pages/min), scraped 587 items (at 0 items/min) -log - 48
+2018-08-24 19:27:51 - INFO - Crawled 371 pages (at 0 pages/min), scraped 587 items (at 0 items/min) -log - 48
+2018-08-24 19:28:51 - INFO - Crawled 371 pages (at 0 pages/min), scraped 587 items (at 0 items/min) -log - 48
+2018-08-24 19:29:51 - INFO - Crawled 371 pages (at 0 pages/min), scraped 587 items (at 0 items/min) -log - 48
+2018-08-24 19:30:51 - INFO - Crawled 371 pages (at 0 pages/min), scraped 587 items (at 0 items/min) -log - 48
+2018-08-24 19:31:51 - INFO - Crawled 371 pages (at 0 pages/min), scraped 587 items (at 0 items/min) -log - 48
+2018-08-24 19:32:51 - INFO - Crawled 371 pages (at 0 pages/min), scraped 587 items (at 0 items/min) -log - 48
+2018-08-24 19:32:54 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats'] -from_settings - 53
+2018-08-24 19:32:54 - INFO - Reading start URLs from redis key 'taobao' (batch size: 32, encoding: utf-8 -setup_redis - 68
+2018-08-24 19:32:55 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'TaobaoSpider.middlewares.TaobaospiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'] -from_settings - 53
+2018-08-24 19:32:55 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'] -from_settings - 53
+2018-08-24 19:32:55 - INFO - Enabled item pipelines:
+['TaobaoSpider.pipelines.TaobaospiderPipeline'] -from_settings - 53
+2018-08-24 19:32:55 - INFO - Spider opened -open_spider - 256
+2018-08-24 19:32:55 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min) -log - 48
+2018-08-24 19:32:55 - INFO - Spider opened: Taobao -spider_opened - 104
+2018-08-24 19:33:00 - INFO - redis库推送token数据成功，用户为：123 -make_request_from_data - 125
+2018-08-24 19:33:00 - INFO - 成功接收到任务，用户为:123 -make_request_from_data - 129
+2018-08-24 19:33:00 - WARNING - C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+ -_showwarnmsg - 99
+2018-08-24 19:33:10 - INFO - 用户123cookie信息不全,原因：'um',一般不影响 -get_cookie - 1353
+2018-08-24 19:33:10 - INFO - _uab_collina重要登录数据已取到用户：123 -get_cookie - 1356
+2018-08-24 19:33:11 - INFO - 入库二维码成功并设置爬虫任务设置为-3,等待用户123扫描二维码 -get_qr - 177
+2018-08-24 19:33:13 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:33:15 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:33:18 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:33:20 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:33:22 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:33:24 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:33:26 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:33:28 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:33:30 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:33:33 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:33:35 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:33:37 - INFO - 用户123扫码成功 等待点击确认操作:10001 -success - 247
+2018-08-24 19:33:37 - INFO - 用户123扫码 确认 成功：10006 -success - 268
+2018-08-24 19:33:37 - INFO - 用户123success_url登录淘宝url获取成功：https://login.taobao.com/member/loginByIm.do?uid=cntaobao%E6%97%A0%E6%B3%95%E6%91%86%E8%84%B1%E4%BD%A02012&token=66b614cedf72fb0614d8a594f8398d08&time=1535110374471&asker=qrcodelogin&ask_version=1.0.0&defaulturl=https%3A%2F%2Fwww.taobao.com%2F&webpas=33148e8a3223eb053e31a26601a2d7b41651847391&umid_token=C1535110385539623450264331535110374629891 -success - 274
+2018-08-24 19:33:39 - INFO - 用户123登陆成功，开始解析 -yes - 354
+2018-08-24 19:33:42 - ERROR - 解析用户123成长值，会员等级出错:Expecting value: line 2 column 1 (char 2) -vip - 595
+2018-08-24 19:33:42 - WARNING - C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py:170: Warning: (1265, "Data truncated for column 'file_name' at row 1")
+  result = self._query(query)
+ -_showwarnmsg - 99
+2018-08-24 19:33:45 - INFO - 用户123已存在订单完成1页 -orders - 741
+2018-08-24 19:33:48 - INFO - 用户123已存在订单完成2页 -orders - 741
+2018-08-24 19:33:52 - INFO - 新版本解析用户123天猫可能出错：订单状态：交易关闭订单id：203905490362963231 -tmall_detail - 1292
+2018-08-24 19:33:52 - WARNING - C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py:170: Warning: (1265, "Data truncated for column 'consigneeMobile' at row 1")
+  result = self._query(query)
+ -_showwarnmsg - 99
+2018-08-24 19:33:53 - INFO - 用户123已存在订单完成3页 -orders - 741
+2018-08-24 19:33:55 - INFO - Crawled 62 pages (at 62 pages/min), scraped 83 items (at 83 items/min) -log - 48
+2018-08-24 19:33:58 - INFO - 用户123已存在订单完成4页 -orders - 741
+2018-08-24 19:34:01 - INFO - 用户123已存在订单完成5页 -orders - 741
+2018-08-24 19:34:06 - INFO - 用户123已存在订单完成6页 -orders - 741
+2018-08-24 19:34:10 - INFO - 用户123已存在订单完成7页 -orders - 741
+2018-08-24 19:34:13 - INFO - 用户123已存在订单完成8页 -orders - 741
+2018-08-24 19:34:17 - INFO - 用户123已存在订单完成9页 -orders - 741
+2018-08-24 19:34:21 - INFO - 用户123已存在订单完成10页 -orders - 741
+2018-08-24 19:34:27 - INFO - 用户123已存在订单完成11页 -orders - 741
+2018-08-24 19:34:31 - INFO - 用户123已存在订单完成12页 -orders - 741
+2018-08-24 19:34:35 - INFO - 用户123已存在订单完成13页 -orders - 741
+2018-08-24 19:34:39 - INFO - 用户123已存在订单完成14页 -orders - 741
+2018-08-24 19:34:44 - INFO - 用户123回收站订单完成1页 -orders - 743
+2018-08-24 19:34:48 - INFO - 用户123回收站订单完成2页 -orders - 743
+2018-08-24 19:34:53 - INFO - 用户123回收站订单完成3页 -orders - 743
+2018-08-24 19:34:53 - INFO - 用户123所有订单页面完成 -orders - 934
+2018-08-24 19:34:55 - INFO - Crawled 282 pages (at 220 pages/min), scraped 586 items (at 503 items/min) -log - 48
+2018-08-24 19:35:55 - INFO - Crawled 282 pages (at 0 pages/min), scraped 586 items (at 0 items/min) -log - 48
+2018-08-24 19:36:55 - INFO - Crawled 282 pages (at 0 pages/min), scraped 586 items (at 0 items/min) -log - 48
+2018-08-24 19:37:55 - INFO - Crawled 282 pages (at 0 pages/min), scraped 586 items (at 0 items/min) -log - 48
+2018-08-24 19:38:55 - INFO - Crawled 282 pages (at 0 pages/min), scraped 586 items (at 0 items/min) -log - 48
+2018-08-24 19:39:55 - INFO - Crawled 282 pages (at 0 pages/min), scraped 586 items (at 0 items/min) -log - 48
+2018-08-24 19:40:55 - INFO - Crawled 282 pages (at 0 pages/min), scraped 586 items (at 0 items/min) -log - 48
+2018-08-24 19:41:55 - INFO - Crawled 282 pages (at 0 pages/min), scraped 586 items (at 0 items/min) -log - 48
+2018-08-24 19:42:55 - INFO - Crawled 282 pages (at 0 pages/min), scraped 586 items (at 0 items/min) -log - 48
+2018-08-24 19:43:55 - INFO - Crawled 282 pages (at 0 pages/min), scraped 586 items (at 0 items/min) -log - 48
+2018-08-24 19:44:55 - INFO - Crawled 282 pages (at 0 pages/min), scraped 586 items (at 0 items/min) -log - 48
+2018-08-24 19:45:55 - INFO - Crawled 282 pages (at 0 pages/min), scraped 586 items (at 0 items/min) -log - 48
+2018-08-24 19:45:55 - INFO - redis库推送token数据成功，用户为：123 -make_request_from_data - 125
+2018-08-24 19:45:55 - INFO - 成功接收到任务，用户为:123 -make_request_from_data - 129
+2018-08-24 19:46:02 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats'] -from_settings - 53
+2018-08-24 19:46:03 - INFO - Reading start URLs from redis key 'taobao' (batch size: 32, encoding: utf-8 -setup_redis - 68
+2018-08-24 19:46:03 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'TaobaoSpider.middlewares.TaobaospiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'] -from_settings - 53
+2018-08-24 19:46:03 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'] -from_settings - 53
+2018-08-24 19:46:03 - INFO - Enabled item pipelines:
+['TaobaoSpider.pipelines.TaobaospiderPipeline'] -from_settings - 53
+2018-08-24 19:46:03 - INFO - Spider opened -open_spider - 256
+2018-08-24 19:46:03 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min) -log - 48
+2018-08-24 19:46:03 - INFO - Spider opened: Taobao -spider_opened - 104
+2018-08-24 19:46:08 - INFO - redis库推送token数据成功，用户为：123 -make_request_from_data - 125
+2018-08-24 19:46:08 - INFO - 成功接收到任务，用户为:123 -make_request_from_data - 129
+2018-08-24 19:46:08 - WARNING - C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+ -_showwarnmsg - 99
+2018-08-24 19:46:18 - INFO - 用户123cookie信息不全,原因：'um',一般不影响 -get_cookie - 1353
+2018-08-24 19:46:18 - INFO - _uab_collina重要登录数据已取到用户：123 -get_cookie - 1356
+2018-08-24 19:46:19 - INFO - 入库二维码成功并设置爬虫任务设置为-3,等待用户123扫描二维码 -get_qr - 177
+2018-08-24 19:46:22 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:46:24 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:46:26 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:46:28 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:46:30 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:46:32 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:46:35 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:46:35 - INFO - 用户123扫码 确认 成功：10006 -success - 268
+2018-08-24 19:46:35 - INFO - 用户123success_url登录淘宝url获取成功：https://login.taobao.com/member/loginByIm.do?uid=cntaobao%E6%97%A0%E6%B3%95%E6%91%86%E8%84%B1%E4%BD%A02012&token=d8416eeaf4b44a016ef6d441a415ca72&time=1535111152108&asker=qrcodelogin&ask_version=1.0.0&defaulturl=https%3A%2F%2Fwww.taobao.com%2F&webpas=39a966b286be74310e3d6b1f6ee8e11f1651847391&umid_token=C1535111173772663668923081535111162928254 -success - 274
+2018-08-24 19:46:37 - INFO - 用户123登陆成功，开始解析 -yes - 354
+2018-08-24 19:51:24 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats'] -from_settings - 53
+2018-08-24 19:51:24 - INFO - Reading start URLs from redis key 'taobao' (batch size: 32, encoding: utf-8 -setup_redis - 68
+2018-08-24 19:51:24 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'TaobaoSpider.middlewares.TaobaospiderDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats'] -from_settings - 53
+2018-08-24 19:51:24 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware'] -from_settings - 53
+2018-08-24 19:51:24 - INFO - Enabled item pipelines:
+['TaobaoSpider.pipelines.TaobaospiderPipeline'] -from_settings - 53
+2018-08-24 19:51:24 - INFO - Spider opened -open_spider - 256
+2018-08-24 19:51:24 - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min) -log - 48
+2018-08-24 19:51:24 - INFO - Spider opened: Taobao -spider_opened - 104
+2018-08-24 19:51:34 - INFO - redis库推送token数据成功，用户为：123 -make_request_from_data - 125
+2018-08-24 19:51:35 - INFO - 成功接收到任务，用户为:123 -make_request_from_data - 129
+2018-08-24 19:51:35 - WARNING - C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\selenium\webdriver\phantomjs\webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+ -_showwarnmsg - 99
+2018-08-24 19:51:45 - INFO - 用户123cookie信息不全,原因：'um',一般不影响 -get_cookie - 1355
+2018-08-24 19:51:45 - INFO - _uab_collina重要登录数据已取到用户：123 -get_cookie - 1358
+2018-08-24 19:51:46 - INFO - 入库二维码成功并设置爬虫任务设置为-3,等待用户123扫描二维码 -get_qr - 177
+2018-08-24 19:51:48 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:51:50 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:51:52 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:51:54 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:51:57 - INFO - 等待用户123扫码：10000 -success - 226
+2018-08-24 19:51:57 - INFO - 用户123扫码 确认 成功：10006 -success - 268
+2018-08-24 19:51:57 - INFO - 用户123success_url登录淘宝url获取成功：https://login.taobao.com/member/loginByIm.do?uid=cntaobao%E6%97%A0%E6%B3%95%E6%91%86%E8%84%B1%E4%BD%A02012&token=51c82872b800c913952534e0335ec51d&time=1535111474083&asker=qrcodelogin&ask_version=1.0.0&defaulturl=https%3A%2F%2Fwww.taobao.com%2F&webpas=4cb6126fa5f6700ec7441bcf3954f1801651847391&umid_token=C1535111500250458707388491535111484375263 -success - 274
+2018-08-24 19:51:59 - INFO - 用户123登陆成功，开始解析 -yes - 354
+2018-08-24 19:52:05 - INFO - 用户123已存在订单完成1页 -orders - 743
+2018-08-24 19:52:09 - INFO - 用户123已存在订单完成2页 -orders - 743
+2018-08-24 19:52:10 - INFO - 新版本解析用户123天猫可能出错：订单状态：交易关闭订单id：203905490362963231 -tmall_detail - 1294
+2018-08-24 19:52:12 - WARNING - C:\Users\Administrator\AppData\Local\Programs\Python\Python36\lib\site-packages\pymysql\cursors.py:170: Warning: (1265, "Data truncated for column 'consigneeMobile' at row 1")
+  result = self._query(query)
+ -_showwarnmsg - 99
+2018-08-24 19:52:13 - INFO - 用户123已存在订单完成3页 -orders - 743
+2018-08-24 19:52:18 - INFO - 用户123已存在订单完成4页 -orders - 743
+2018-08-24 19:52:22 - INFO - 用户123已存在订单完成5页 -orders - 743
+2018-08-24 19:52:24 - INFO - Crawled 90 pages (at 90 pages/min), scraped 163 items (at 163 items/min) -log - 48
+2018-08-24 19:52:26 - INFO - 用户123已存在订单完成6页 -orders - 743
+2018-08-24 19:52:30 - INFO - 用户123已存在订单完成7页 -orders - 743
+2018-08-24 19:52:34 - INFO - 用户123已存在订单完成8页 -orders - 743
+2018-08-24 19:52:37 - INFO - 用户123已存在订单完成9页 -orders - 743
+2018-08-24 19:52:41 - INFO - 用户123已存在订单完成10页 -orders - 743
+2018-08-24 19:52:47 - INFO - 用户123已存在订单完成11页 -orders - 743
+2018-08-24 19:52:52 - INFO - 用户123已存在订单完成12页 -orders - 743
+2018-08-24 19:52:56 - INFO - 用户123已存在订单完成13页 -orders - 743
+2018-08-24 19:53:00 - INFO - 用户123已存在订单完成14页 -orders - 743
+2018-08-24 19:53:05 - INFO - 用户123回收站订单完成1页 -orders - 745
+2018-08-24 19:53:09 - INFO - 用户123回收站订单完成2页 -orders - 745
+2018-08-24 19:53:14 - INFO - 用户123回收站订单完成3页 -orders - 745
+2018-08-24 19:53:14 - INFO - 用户123所有订单页面完成 -orders - 936
+2018-08-24 19:53:24 - INFO - Crawled 275 pages (at 185 pages/min), scraped 587 items (at 424 items/min) -log - 48
+2018-08-24 19:54:24 - INFO - Crawled 275 pages (at 0 pages/min), scraped 587 items (at 0 items/min) -log - 48
+2018-08-24 19:55:24 - INFO - Crawled 275 pages (at 0 pages/min), scraped 587 items (at 0 items/min) -log - 48
+2018-08-24 19:56:24 - INFO - Crawled 275 pages (at 0 pages/min), scraped 587 items (at 0 items/min) -log - 48
+2018-08-24 19:57:24 - INFO - Crawled 275 pages (at 0 pages/min), scraped 587 items (at 0 items/min) -log - 48
